@@ -22,15 +22,16 @@ body{
 
 /* text styles */
 h1 {
-    font-size: 68px;
+    font-size: clamp(24px, 5vw, 64px);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 1;
     color: #0F267A;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: clamp(18px, 3vw, 24px);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -44,8 +45,8 @@ h4 {
 }
 
 .container1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
     /* max-width: 100%; */
     overflow: hidden;
     border-radius: 12px;
@@ -60,13 +61,14 @@ h4 {
 }
 
 .left-first img {
-    max-width: 650px;
+    max-width: 100%;
 }
 
 .right-first {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 10px;
 }
 
 /* buttons */
@@ -91,5 +93,51 @@ h4 {
     box-shadow: 10px 10px 0 #FF2468;
 }
 
+.first-btn:active {
+    transform: translate(10px, 10px);
+    box-shadow: none;
+}
+
 /* first screen end section */
 
+
+/* Responsive Versions */
+
+@media screen and (max-width: 624px) {
+    .container1{
+        flex-direction: column;
+    }
+    /* h1{
+        font-size: 34px;
+        line-height: 1;
+    } */
+    /* .img img {
+        max-height: 450px;
+        width: 100%;
+        object-fit: cover;
+    } */
+    /* h6.pro-cat, h2.pro-name, p.pro-desc, .price {
+        padding-bottom: 20px;
+    } */
+}
+
+@media screen and (max-width: 375px) {
+    .container1{
+        flex-direction: column;
+    }
+}
+    /* .first-screen {
+        margin: 15px 0px;
+    }
+    .card-content {
+        padding: 20px;
+    }
+    .img img {
+        max-height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+    h6.pro-cat, h2.pro-name, p.pro-desc, .price {
+        padding-bottom: 15px;
+    }
+} */
