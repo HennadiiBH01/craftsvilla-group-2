@@ -1,143 +1,118 @@
+/* Import fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* .poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  } */
 
-
+/* Reset styles */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: hsl(0, 0%, 100%);
-    font-size: 14px;
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
+/* Global styles */
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
-/* text styles */
+/* Text styles */
+h1, h4 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  line-height: 1;
+  color: #0F267A;
+}
+
 h1 {
-    font-size: clamp(24px, 5vw, 64px);
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-    color: #0F267A;
+  font-size: clamp(34px, 5vw, 68px);
+  font-weight: 400;
 }
 
 h4 {
-    font-size: clamp(18px, 3vw, 24px);
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #0F267A;
+  font-size: clamp(18px, 4vw, 24px);
+  font-weight: 400;
 }
 
-/* first screen start section */
-
+/* First screen section */
 .first-screen {
-    margin: 30px 30px;
+  margin: 30px 0;
 }
 
 .container1 {
-    display: flex;
-    /* grid-template-columns: 1fr 1fr; */
-    /* max-width: 100%; */
-    overflow: hidden;
-    border-radius: 12px;
-    background-color: #fff;
-    margin: 15px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #fff;
+  margin: 15px 0;
+}
+
+.left-first, .right-first {
+  flex: 1;
 }
 
 .left-first {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .left-first img {
-    max-width: 100%;
+  max-width: 100%;
+  max-height: 640px;
+  padding: 10px;
 }
 
 .right-first {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
+    max-width: 460px;
 }
 
-/* buttons */
+/* Buttons */
 .first-btn {
-    color: #fff;
-    background-color: #FF2468;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-    width: 250px;
-    height: 80px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 24px;
-    box-shadow: 10px 10px 0 #0F267A;
-
+  color: #fff;
+  background-color: #FF2468;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: clamp(18px, 4vw, 24px);
+  box-shadow: 10px 10px 0 #0F267A;
+  transition: all 0.2s ease;
 }
 
 .first-btn:hover {
-    background-color: #0F267A;
-    box-shadow: 10px 10px 0 #FF2468;
+  background-color: #0F267A;
+  box-shadow: 10px 10px 0 #FF2468;
 }
 
 .first-btn:active {
-    transform: translate(10px, 10px);
-    box-shadow: none;
+  transform: translate(10px, 10px);
+  box-shadow: none;
 }
 
-/* first screen end section */
-
-
-/* Responsive Versions */
-
+/* Responsive versions */
 @media screen and (max-width: 624px) {
-    .container1{
-        flex-direction: column;
-    }
-    /* h1{
-        font-size: 34px;
-        line-height: 1;
-    } */
-    /* .img img {
-        max-height: 450px;
-        width: 100%;
-        object-fit: cover;
-    } */
-    /* h6.pro-cat, h2.pro-name, p.pro-desc, .price {
-        padding-bottom: 20px;
-    } */
+  .container1 {
+    flex-direction: column;
+  }
+
+  h1{
+    padding-top: 20px;
+  }
+
+  h1, h4, .first-btn {
+    padding-bottom: 20px;
+  }
 }
 
-@media screen and (max-width: 375px) {
-    .container1{
-        flex-direction: column;
-    }
-}
-    /* .first-screen {
-        margin: 15px 0px;
-    }
-    .card-content {
-        padding: 20px;
-    }
-    .img img {
-        max-height: 250px;
-        width: 100%;
-        object-fit: cover;
-    }
-    h6.pro-cat, h2.pro-name, p.pro-desc, .price {
-        padding-bottom: 15px;
-    }
+/* @media screen and (max-width: 375px) {
+  .container1 {
+  }
 } */
