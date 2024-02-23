@@ -80,6 +80,7 @@ h4 {
   text-align: center;
   cursor: pointer;
   padding: 10px;
+  width: 80%;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: clamp(18px, 4vw, 24px);
