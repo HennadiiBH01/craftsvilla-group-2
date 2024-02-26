@@ -102,6 +102,10 @@ h4 {
 @media screen and (max-width: 624px) {
   .container1 {
     flex-direction: column;
+    text-align: center;
+  }
+  .container1 .first-btn {
+    margin: 0 auto;
   }
 
   h1{
