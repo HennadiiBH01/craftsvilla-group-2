@@ -13,6 +13,9 @@ body {
   background-color: hsl(0, 0%, 100%);
   font-size: 14px;
   display: grid;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   place-items: center;
   min-height: 100vh;
 }
@@ -98,11 +101,123 @@ h4 {
   box-shadow: none;
 }
 
-/* .btn-booking {
-  font-family: "Poppins", sans-serif !important;
-  font-weight: 600;
-  font-size: clamp(18px, 4vw, 24px);
+/* slider gallery start */
+/* .gallery {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 } */
+
+.slider{
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 500px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 500px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #84DBEF;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #FF2468;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 500px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #84DBEF;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #FF2468;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #FF2468;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #FF2468;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #FF2468;
+}
+
+/* slider gallery end */
 
 /* Responsive versions */
 @media screen and (max-width: 624px) {
