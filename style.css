@@ -98,6 +98,12 @@ h4 {
   box-shadow: none;
 }
 
+/* .btn-booking {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600;
+  font-size: clamp(18px, 4vw, 24px);
+} */
+
 /* Responsive versions */
 @media screen and (max-width: 624px) {
   .container1 {

@@ -60,10 +60,22 @@
 
 <!-- START SECTION BOOKING -->
 <section class="booking">
-<!-- Google Calendar Appointment Scheduling begin -->
-	<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2t9zmvLd2M6bQ7EGKpup5GyDWa9O9kV-252jZ5GE-emwO6g6F5S09zrIz99qyIdoddZFOEOO7I?gv=true" 
-	style="border: 0" width="100%" height="600" frameborder="0"></iframe>
-<!-- end Google Calendar Appointment Scheduling -->
+	<div class="btn-booking">
+		<script>
+			(function() {
+			var target = document.currentScript;
+			window.addEventListener('load', function() {
+				calendar.schedulingButton.load({
+				url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2t9zmvLd2M6bQ7EGKpup5GyDWa9O9kV-252jZ5GE-emwO6g6F5S09zrIz99qyIdoddZFOEOO7I?gv=true',
+				color: '#039BE5',
+				label: 'Book an appointment',
+				target,
+				});
+			});
+			})();
+		</script>
+	</div>
+		<!-- end Google Calendar Appointment Scheduling -->
 </section>
 <!-- END SECTION BOOKING -->
 
