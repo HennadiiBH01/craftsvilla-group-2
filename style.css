@@ -21,7 +21,7 @@ body {
 }
 
 /* Text styles */
-h1, h4 {
+h1, h2, h4 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   line-height: 1;
@@ -29,6 +29,11 @@ h1, h4 {
 }
 
 h1 {
+  font-size: clamp(34px, 5vw, 68px);
+  font-weight: 400;
+}
+
+h2 {
   font-size: clamp(34px, 5vw, 68px);
   font-weight: 400;
 }
@@ -102,14 +107,16 @@ h4 {
 }
 
 /* slider gallery start */
-/* .gallery {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+
+.gallery{
   display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+  flex-direction: row;
+  margin: 20px;
+}
+
+.gallery-text {
+  height: 100vh;
+}
 
 .slider{
   width: 500px;
@@ -229,12 +236,15 @@ h4 {
     margin: 0 auto;
   }
 
-  h1{
+  h1, h2{
     padding-top: 20px;
   }
 
-  h1, h4, .first-btn {
+  h1, h2, h4, .first-btn {
     padding-bottom: 20px;
+  }
+  .gallery{
+    flex-wrap: wrap;
   }
 }
 
