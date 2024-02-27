@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+  <div class="container-form-section">
+    <div class="feedback-container">
+      <div class="header-container">
+        <h2>Your Feedback is important</h2>
+        <p class="small-text">Let us know what you think about Craftsvilla! Your feedback helps us shape the future of our workshops and kits.</p>
+      </div>
+    </div>
+    <div class="form-container">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+    
+      </form>
+      <form id="feedbackForm">
+        <div class="form-group">
+          <label for="satisfaction">How satisfied are you with our product?</label>
+          <input type="range" min="1" max="5" value="3" class="slider" id="satisfaction" name="satisfaction">
+       
+          <div class="smileys">
+            <span class="smiley">&#128577;</span>
+            <span class="smiley">&#128533;</span>
+            <span class="smiley">&#128528;</span>
+            <span class="smiley">&#128578;</span>
+            <span class="smiley">&#128513;</span>
+          </div>
+   
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" rows="4"></textarea>
+           <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
