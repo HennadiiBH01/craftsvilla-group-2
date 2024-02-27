@@ -1,15 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Crafts Villa</title>
-	<link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Slider</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .slider-container {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .slide img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .slide-content {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .slide-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .slide-content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+</style>
 </head>
 <body>
-
+	<h1>Hello World HEI hei!</h1>
+<div class="container"><img src="test" alt="test"><img src="" alt=""></img></div>
 
 </body>
 </html>
