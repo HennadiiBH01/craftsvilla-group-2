@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Crafts Villa</title>
+	<link rel="stylesheet" href="./style.css">
+	<!-- Google Calendar Appointment Scheduling begin -->
+	<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+	<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+
+</head>
+<body>
+<!-- START SECTION MENU -->
+<section class="menu">
+
+<!--	Mobile Menu-->
+	<div id="mobile-menu" class="hidden">
+		<ul>
+			<li>Home</li>
+			<li>Products</li>
+			<li>Gallery</li>
+			<li>Reviews</li>
+			<li>Feedback</li>
+		</ul>
+	</div>
+	<button id="mobile-menu-btn" class="menu-btn-closed" onclick="toggleMenu()">
+		<img src="./images/menu-icon.svg" id="menu-open-icon" class="visible" alt="Open Menu Icon">
+		<img src="./images/menu-close-icon.svg" id="menu-close-icon" class="hidden" alt="Open Close Icon">
+	</button>
+</section>
+<!-- END SECTION MENU -->
+
+<!-- START SECTION FIRST SCREEN -->
+<section class="first-screen">
+	<div class="container1">
+		<div class="left-first">
+			<img src="./images/Girls-with-pencil.svg">
+		</div>
+		<div class="right-first">
+			<h1>creativity, bonding, and relaxation</h1>
+			<h4>Choose something that inspires you</h4>
+			<button class="first-btn">Booking activity</button>
+		</div>
+	</div>
+</section>
+<!-- END SECTION FIRST SCREEN -->
+
+<!-- START SECTION PRODUCTS -->
+<section class="products">
+
+</section>
+<!-- END SECTION PRODUCTS -->
+
+<!-- START SECTION GALLERY -->
+<section class="gallery">
+		<div class="gallery-text">
+			<h2>A Glimpse into the Craftsvilla Magic</h2>
+			<h4>Explore our gallery to see the diverse and beautiful art pieces created by our talented customers. Get inspired and discover your own artistic potential.</h4>
+		</div>
+		<div>
+	<!--image slider start-->
+	<div class="slider">
+		<div class="slides">
+		  <!--radio buttons start-->
+		  <input type="radio" name="radio-btn" id="radio1">
+		  <input type="radio" name="radio-btn" id="radio2">
+		  <input type="radio" name="radio-btn" id="radio3">
+		  <input type="radio" name="radio-btn" id="radio4">
+		  <!--radio buttons end-->
+		  <!--slide images start-->
+		  <div class="slide first">
+			<img src="./images/Art-1.webp" alt="ai image mosaic art">
+		  </div>
+		  <div class="slide">
+			<img src="./images/Art-2.webp" alt="ai image">
+		  </div>
+		  <div class="slide">
+			<img src="./images/Art-3.webp" alt="ai image 2">
+		  </div>
+		  <div class="slide">
+			<img src="./images/Namaste-relaxation-class.png" alt="Photo by Conscious Design on Unsplash">
+		  </div>
+		  <!--slide images end-->
+		  <!--automatic navigation start-->
+		  <div class="navigation-auto">
+			<div class="auto-btn1"></div>
+			<div class="auto-btn2"></div>
+			<div class="auto-btn3"></div>
+			<div class="auto-btn4"></div>
+		  </div>
+		  <!--automatic navigation end-->
+		</div>
+		<!--manual navigation start-->
+		<div class="navigation-manual">
+		  <label for="radio1" class="manual-btn"></label>
+		  <label for="radio2" class="manual-btn"></label>
+		  <label for="radio3" class="manual-btn"></label>
+		  <label for="radio4" class="manual-btn"></label>
+		</div>
+		<!--manual navigation end-->
+	  </div>
+	  <!--image slider end-->
+  
+	  <script type="text/javascript">
+	  var counter = 1;
+	  setInterval(function(){
+		document.getElementById('radio' + counter).checked = true;
+		counter++;
+		if(counter > 4){
+		  counter = 1;
+		}
+	  }, 5000);
+	  </script>
+		</div>
+
+</section>
+<!-- END SECTION GALLERY -->
+
+<!-- START SECTION REVIEWS -->
+<section class="reviews">
+
+</section>
+<!-- END SECTION REVIEWS -->
+
+<!-- START SECTION FEEDBACK -->
+<section class="feedback">
+
+</section>
+<!-- END SECTION FEEDBACK -->
+
+<!-- START SECTION BOOKING -->
+<section class="booking">
+	<div class="btn-booking">
+		<script>
+			(function() {
+			var target = document.currentScript;
+			window.addEventListener('load', function() {
+				calendar.schedulingButton.load({
+				url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2t9zmvLd2M6bQ7EGKpup5GyDWa9O9kV-252jZ5GE-emwO6g6F5S09zrIz99qyIdoddZFOEOO7I?gv=true',
+				color: '#039BE5',
+				label: 'Book an appointment',
+				target,
+				});
+			});
+			})();
+		</script>
+	</div>
+		<!-- end Google Calendar Appointment Scheduling -->
+</section>
+<!-- END SECTION BOOKING -->
+
+<!-- START SECTION FOOTER -->
+<section class="footer">
+	<div class="footer-container">
+		<p>The project was worked on by:
+		  <a href="https://github.com/Soulstices">Hennadii, </a>
+		  <a href="#">Terje, </a>
+		  <a href="#">Martin, </a>
+		  <a href="https://github.com/Yevhen23surfer">Yevhen.</a></p>
+	  </div>
+</section>
+<!-- END SECTION FOOTER -->
+
+<script src="index.js"></script>
+</body>
+</html>
