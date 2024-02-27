@@ -34,13 +34,14 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(34px, 5vw, 68px);
+  font-size: clamp(34px, 5vw, 56px);
   font-weight: 400;
 }
 
 h4 {
-  font-size: clamp(18px, 4vw, 24px);
+  font-size: clamp(16px, 4vw, 24px);
   font-weight: 400;
+  line-height: 1.5;
 }
 
 /* First screen section */
@@ -115,7 +116,15 @@ h4 {
 }
 
 .gallery-text {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  padding-right: 30px;
+}
+
+.gallery-text h2{
+  padding-bottom: 30px;
 }
 
 .slider{
@@ -127,7 +136,7 @@ h4 {
 
 .slides{
   width: 500%;
-  height: 500px;
+  max-height: 500px;
   display: flex;
 }
 
@@ -141,8 +150,8 @@ h4 {
 }
 
 .slide img{
-  width: 500px;
-  height: 500px;
+  max-width: auto;
+  max-height: 500px;
 }
 
 /*css for manual slide navigation*/
@@ -245,6 +254,12 @@ h4 {
   }
   .gallery{
     flex-wrap: wrap;
+    max-width: 450px;
+  }
+
+  .slides .slider .slide img {
+    max-width: 200px;
+    max-height: 200px;
   }
 }
 
