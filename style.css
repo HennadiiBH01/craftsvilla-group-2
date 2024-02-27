@@ -323,11 +323,10 @@ h4 {
   grid-template-columns: 1fr 1fr 1fr; /* Switched the order of columns */
   gap: 20px;
   background-color: hsla(191, 77%, 73%, 30%);
-  padding: 40px 0px;
 }
 
 .feedback-container {
-  padding: 10px;
+  padding: 40px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -336,6 +335,7 @@ h4 {
 
 
 .form-container {
+  margin: 40px 0px;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
@@ -386,8 +386,7 @@ h4 {
 .right-to-form {
   display: flex;
   justify-content: center;
-  padding-bottom: none;
-  margin-bottom: none;
+  align-items: flex-end;
 }
 
 
@@ -463,27 +462,8 @@ h4 {
     flex-direction: column;
   }
 }
-  /* .names-list {
-    width: 100%; /* Make each list item fill the entire width on smaller screens */
-
-
-/* @media screen and (max-width: 375px) {
-  .container1 {
-  }
-} */
-
 
  /*products-start*/
-    
- *{
-  font-family: 'Poppins', sans-serif;
-  margin: 0; padding: 0;
-  box-sizing: border-box;
-  outline: none; border: none;
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: .2s linear;
-}
 
 .products {
 width: 100%
