@@ -127,3 +127,48 @@ h4 {
   .container1 {
   }
 } */
+
+
+#mobile-menu-btn {
+  cursor: pointer;
+  z-index: 20;
+  border: none;
+  position: absolute;
+  padding: 7px;
+  height: 53px;
+  width: 53px;
+  top: 0;
+  right: 0;
+  transition: background-color 0.2s;
+}
+
+.menu-btn-closed {
+  background: #232996;
+}
+
+.menu-btn-open {
+  background: #FF2468;
+
+}
+
+#mobile-menu {
+  z-index: 10;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  justify-content: center;
+  justify-items: center;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
