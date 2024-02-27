@@ -11,6 +11,8 @@
 /* Global styles */
 body {
   background-color: hsl(0, 0%, 100%);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   font-size: 14px;
   display: grid;
   /* display: flex;
@@ -22,8 +24,6 @@ body {
 
 /* Text styles */
 h1, h2, h4, p {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   line-height: 1;
   color: #0F267A;
 }
@@ -320,23 +320,25 @@ h4 {
 
 .container-form-section {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Switched the order of columns */
+  grid-template-columns: 1fr 1fr 1fr; /* Switched the order of columns */
   gap: 20px;
+  background-color: hsla(191, 77%, 73%, 30%);
+  padding: 40px 0px;
 }
 
-.feedback-container,
+.feedback-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .form-container {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: #0F267A;
-}
-
-.small-text {
-  font-size: 14px;
-  color: #888;
-  margin-bottom: 10px;
 }
 
 .header-container {
@@ -347,10 +349,11 @@ h4 {
   margin-bottom: 15px;
 }
 
-.form-group label {
+.form-group > label {
   display: block;
   margin-bottom: 5px;
-  color: #333;
+  color: #0F267A;
+  font-weight: 600;
 }
 
 .form-group input[type="text"],
@@ -359,17 +362,18 @@ h4 {
 .form-group textarea {
   width: calc(100% - 10px);
   padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 2px solid #a0a0a0;
 }
 
-.form-group input[type="submit"] {
+/* submit btn */
+.form-group input[type="submit"] { 
   background-color: #0F267A;
   color: white;
   padding: 15px 30px;
-  border-radius: 8px;
   font-size: 16px;
+  width: 100%;
   cursor: pointer;
+  border: none;
   transition: background-color 0.3s ease;
   display: block;
   margin: 0 auto;
@@ -377,6 +381,13 @@ h4 {
 
 .form-group input[type="submit"]:hover {
   background-color: #0c1f5f;
+}
+
+.right-to-form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: none;
+  margin-bottom: none;
 }
 
 
@@ -444,6 +455,12 @@ h4 {
 
   #mobile-menu-btn {
     display: flex !important;
+  }
+
+  .container-form-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
   /* .names-list {
