@@ -6,7 +6,6 @@ const mobileMenuOpenIcon = document.getElementById('menu-open-icon');
 
 const toggleMenu = () => {
 	isMenuOpen = !isMenuOpen
-	console.log(isMenuOpen)
 
 	mobileMenuBtn.classList.toggle('menu-btn-open')
 	mobileMenuBtn.classList.toggle('menu-btn-closed')
