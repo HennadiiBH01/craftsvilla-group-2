@@ -121,13 +121,84 @@
 
 <!-- START SECTION REVIEWS -->
 <section class="reviews">
-
+	<div class="carousel-container">
+		<div class="carousel">
+		  <div class="btn-container container-prev">
+			<button class="prev" onclick="">❮</button>
+		  </div>
+		  <div class="carousel-slide">
+			<div class="profile-picture">
+			  <img src="Images/handsome-confident-smiling-man-with-hands-crossed-chest.jpg" alt="Profile Picture 1">
+			</div>
+			<div class="carousel-caption">
+			  <h3>Mark</h3>
+			  <p>Met my "soon to be wife" at a craftvilla course 10 out of 10. Recommending Craftvilla to everyone!!</p>
+			  <p>Image by <a href="https://www.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_9583860.htm#query=people&position=0&from_view=keyword&track=sph&uuid=b03df4b5-318c-4ae3-b02a-90e6bcc0842a">cookie_studio</a> on Freepik</p>
+			</div>
+		  </div>
+		  <div class="carousel-slide">
+			<div class="profile-picture">
+			  <img src="Images/newcomer-get-know-teammates-pleased-good-looking-businesswoman-transparent-glasses-blue-collar-shirt-smiling-broadly-assuring-good-quality-product-gray-wall.jpg" alt="Profile Picture 2">
+			</div>
+			<div class="carousel-caption">
+			  <h3>Juliet</h3>
+			  <p>Went to a painting course with craftvilla. Want to recommend it to everyone!</p>
+			  <p>Image by <a href="https://www.freepik.com/free-photo/newcomer-get-know-teammates-pleased-good-looking-businesswoman-transparent-glasses-blue-collar-shirt-smiling-broadly-assuring-good-quality-product-gray-wall_10292030.htm#query=people&position=7&from_view=keyword&track=sph&uuid=b03df4b5-318c-4ae3-b02a-90e6bcc0842a">cookie_studio</a> on Freepik"
+			  </p>
+			</div>
+		  </div>
+		  <!-- Add more slides as needed -->
+		  <div class="btn-container container-next"><button class="next" onclick="">❯</button></div>
+		</div>
+	  </div>
 </section>
 <!-- END SECTION REVIEWS -->
 
 <!-- START SECTION FEEDBACK -->
 <section class="feedback">
-
+	<div class="container-form-section">
+		<div class="feedback-container">
+		  <div class="header-container">
+			<h2>Your Feedback is important</h2>
+			<p class="small-text">Let us know what you think about Craftsvilla! Your feedback helps us shape the future of our workshops and kits.</p>
+		  </div>
+		</div>
+		<div class="form-container">
+		  <form id="contactForm">
+			<div class="form-group">
+			  <label for="name">Name:</label>
+			  <input type="text" id="name" name="name" required>
+			</div>
+			<div class="form-group">
+			  <label for="phone">Phone:</label>
+			  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+			</div>
+			<div class="form-group">
+			  <label for="email">Email:</label>
+			  <input type="email" id="email" name="email" required>
+			</div>
+		
+		  </form>
+		  <form id="feedbackForm">
+			<div class="form-group">
+			  <label for="satisfaction">How satisfied are you with our product?</label>
+			  <input type="range" min="1" max="5" value="3" class="slider" id="satisfaction" name="satisfaction">
+		   
+			  <div class="smileys">
+				<span class="smiley">&#128577;</span>
+				<span class="smiley">&#128533;</span>
+				<span class="smiley">&#128528;</span>
+				<span class="smiley">&#128578;</span>
+				<span class="smiley">&#128513;</span>
+			  </div>
+	   
+			  <label for="comment">Comment:</label>
+			  <textarea id="comment" name="comment" rows="4"></textarea>
+			   <input type="submit" value="Submit">
+			</div>
+		  </form>
+		</div>
+	  </div>
 </section>
 <!-- END SECTION FEEDBACK -->
 
