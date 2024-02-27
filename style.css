@@ -21,7 +21,7 @@ body {
 }
 
 /* Text styles */
-h1, h2, h4 {
+h1, h2, h4, p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   line-height: 1;
@@ -68,9 +68,10 @@ h4 {
 }
 
 .left-first img {
-  max-width: 100%;
+  max-width: 90%;
   max-height: 640px;
   padding: 10px;
+  margin: 0 auto;
 }
 
 .right-first {
@@ -235,12 +236,39 @@ h4 {
 
 /* slider gallery end */
 
+/* FOOTER START */
+.footer {
+  background-color: #0F267A;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow names to wrap to multiple lines on smaller screens */
+}
+
+.footer-container a{
+  color: #84DBEF;
+}
+
+.footer-container p{
+  color: #fff;
+}
+
+/* FOOTER END */
+
 /* Responsive versions */
 @media screen and (max-width: 624px) {
   .container1 {
     flex-direction: column;
     text-align: center;
   }
+
   .container1 .first-btn {
     margin: 0 auto;
   }
@@ -257,11 +285,18 @@ h4 {
     max-width: 450px;
   }
 
+  .gallery-text {
+    text-align: center;
+  }
+
   .slides .slider .slide img {
     max-width: 200px;
     max-height: 200px;
   }
 }
+  /* .names-list {
+    width: 100%; /* Make each list item fill the entire width on smaller screens */
+
 
 /* @media screen and (max-width: 375px) {
   .container1 {
