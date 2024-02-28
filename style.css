@@ -323,6 +323,7 @@ h4 {
   grid-template-columns: 1fr 1fr 1fr; /* Switched the order of columns */
   gap: 20px;
   background-color: hsla(191, 77%, 73%, 30%);
+  padding: 0px 20px;
 }
 
 .feedback-container {
