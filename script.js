@@ -7,6 +7,8 @@ const mobileMenuOpenIcon = document.getElementById('menu-open-icon');
 const toggleMenu = () => {
 	isMenuOpen = !isMenuOpen
 
+	isMenuOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
+
 	mobileMenuBtn.classList.toggle('menu-btn-open')
 	mobileMenuBtn.classList.toggle('menu-btn-closed')
 	mobileMenu.classList.toggle('visible')

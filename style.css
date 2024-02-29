@@ -105,6 +105,10 @@ header > button {
     transition: background-color 0.2s;
 }
 
+#mobile-menu > ul {
+    padding: 0 !important;
+}
+
 .menu-btn-closed {
     background: #232996;
 }
@@ -900,6 +904,10 @@ img {
 @media screen and (max-width: 1279px) {
     header {
         display: none;
+    }
+
+    .gallery-right {
+        margin-right: auto !important;
     }
 
     .header-mobile {
