@@ -957,3 +957,7 @@ img {
       font-size: clamp(14px, 5vw, 24px) !important;
     }
 }
+
+@media screen and (min-width:765px) and (max-width: 1439px) {
+
+}
