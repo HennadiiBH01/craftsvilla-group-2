@@ -87,6 +87,99 @@ header > button {
     height: 45px;
 }
 
+.header-mobile {
+    display: none;
+}
+
+#mobile-menu-btn {
+    display: none;
+    cursor: pointer;
+    z-index: 20;
+    border: none;
+    position: absolute;
+    padding: 7px;
+    height: 53px;
+    width: 53px;
+    top: 0;
+    right: 0;
+    transition: background-color 0.2s;
+}
+
+.menu-btn-closed {
+    background: #232996;
+}
+
+.menu-btn-open {
+    background: #FF2468;
+
+}
+
+#mobile-menu {
+    z-index: 20;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white !important;
+    justify-content: center;
+    justify-items: center;
+}
+
+#mobile-menu > ul {
+    margin: auto;
+}
+
+#mobile-menu > ul > li {
+    list-style-type: none;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: -0.02em;
+    padding-bottom: 32px;
+    color: #0F267A;
+}
+
+.visible {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+#mobile-menu-btn {
+    display: flex !important;
+}
+
+.bottom-0 {
+    bottom: 0 !important;
+}
+
+.mobile-menu-logo {
+    font-weight: 700 !important;
+    font-size: 40px !important;
+    margin-bottom: 40px !important;
+}
+
+.mobile-logo {
+    font-weight: 700 !important;
+    padding-left: 60px !important;
+    background-color: white;
+    width: 100%;
+    height: 53px !important;
+    display: flex;
+}
+
+.mobile-logo > a {
+    font-size: 32px !important;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 /*First Screen*/
 
 .first-screen {
@@ -809,6 +902,20 @@ img {
         display: none;
     }
 
+    .header-mobile {
+        pointer-events: visible;
+        z-index: 10;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: row;
+        /*background-color: white;*/
+    }
+
+
+
     .image-container {
         width: auto;
 
@@ -981,7 +1088,9 @@ img {
     }
 
     h1 {
-        line-height: 60px !important;
+        font-size: clamp(24px, 4vw, 48px) !important;
+        font-weight: 600 !important;
+        line-height: 50px !important;
     }
 
     /*.image-container {*/
@@ -999,6 +1108,7 @@ img {
 
     .first-screen > .container > p {
         padding-inline: 30px;
+        display: none;
     }
 
     .last-booking {

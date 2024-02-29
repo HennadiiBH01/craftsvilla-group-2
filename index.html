@@ -19,6 +19,25 @@
 	</nav>
 	<button>Booking</button>
 </header>
+<div class="header-mobile">
+	<div id="mobile-menu" class="hidden">
+		<ul>
+			<li class="mobile-menu-logo"><a href="#home"  onclick="toggleMenu()">Crafts Villa</a></li>
+			<li><a href="#home"  onclick="toggleMenu()">Home</a></li>
+			<li><a href="#products"  onclick="toggleMenu()">Products</a></li>
+			<li><a href="#gallery"  onclick="toggleMenu()">Gallery</a></li>
+			<li><a href="#reviews"  onclick="toggleMenu()">Reviews</a></li>
+			<li><a href="#feedback"  onclick="toggleMenu()">Feedback</a></li>
+		</ul>
+	</div>
+	<div class="mobile-logo">
+		<a href="#home">Crafts Villa</a>
+	</div>
+	<button id="mobile-menu-btn" class="menu-btn-closed" onclick="toggleMenu()">
+		<img src="./images/menu-icon.svg" id="menu-open-icon" class="visible" alt="Open Menu Icon">
+		<img src="./images/menu-close-icon.svg" id="menu-close-icon" class="hidden" alt="Open Close Icon">
+	</button>
+</div>
 <main>
 	<section class="first-screen">
 		<div class="image-container">
@@ -178,5 +197,6 @@
 	<a href="https://github.com/Yevhen23surfer">Yevhen</a>
 	<p class="opacity-50">Crafts Villa</p>
 </footer>
+<script src="./script.js"></script>
 </body>
 </html>
