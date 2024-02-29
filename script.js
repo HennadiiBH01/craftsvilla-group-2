@@ -36,26 +36,75 @@ function toggleActiveSmile(clickedElement) {
 	clickedElement.src = clickedElement.dataset.active;
 }
 
-// Reviews
-// let slideIndex = 0;
-//
-// function moveSlide(n) {
-// 	const slides = document.getElementsByClassName("carousel-slide");
-// 	slideIndex += n;
-// 	if (slideIndex >= slides.length) {slideIndex = 0}
-// 	if (slideIndex < 0) {slideIndex = slides.length - 1}
-// 	for (let i = 0; i < slides.length; i++) {
-// 		slides[i].style.display = "none";
-// 	}
-// 	slides[slideIndex].style.display = "flex"; // Adjust display to 'flex'
-// }
-//
-// document.querySelector('.container-prev').addEventListener('click', function() {
-// 	moveSlide(-1);
-// });
-//
-// document.querySelector('.container-next').addEventListener('click', function() {
-// 	moveSlide(1);
-// });
-//
-// moveSlide(0); // Show first slide by default
+// Switch Reviews
+const reviewTitle = document.getElementById('review-title')
+const reviewText = document.getElementById('review-text')
+const reviewAuthor = document.getElementById('review-author')
+
+const reviews = [{
+	title: "Perfect kids' party",
+	text: `"Craftsvilla's painting party was a hit for my kid's birthday! Engaged kids, friendly staff, clean space. Will definitely recommend!"`,
+	author: "- David (with young children)"
+}, {
+	title: "Fun with friends",
+	text: `"Mosaic workshop with friends at Craftsvilla was amazing! Great instructor, quality kits, and tons of fun. Highly recommend!"`,
+	author: "- Sarah (group outing)"
+}, {
+	title: "Creative team bonding",
+	text: `"Our corporate team loved the watercolor workshop at Craftsvilla! Learned new skills, laughed together, and created beautiful art."`,
+	author: "- Maria (corporate team)"
+},]
+
+
+let currentIndex = 0;
+const fadeOutDuration = 500; // Duration of the fade-out animation in milliseconds
+const fadeInDuration = 500; // Duration of the fade-in animation in milliseconds
+const stayAtFullOpacityDuration = 2000; // Duration to stay at 100% opacity before transitioning to the next review in milliseconds
+const reviewChangeInterval = fadeOutDuration + fadeInDuration + stayAtFullOpacityDuration;
+
+function updateReview() {
+	const currentReview = reviews[currentIndex];
+
+	// Update text content
+	reviewTitle.textContent = currentReview.title;
+	reviewText.textContent = currentReview.text;
+	reviewAuthor.textContent = currentReview.author;
+
+	// Fade out
+	setTimeout(() => {
+		reviewTitle.style.transition = `opacity ${fadeOutDuration}ms ease-out`;
+		reviewText.style.transition = `opacity ${fadeOutDuration}ms ease-out`;
+		reviewAuthor.style.transition = `opacity ${fadeOutDuration}ms ease-out`;
+
+		reviewTitle.style.opacity = 0;
+		reviewText.style.opacity = 0;
+		reviewAuthor.style.opacity = 0;
+	}, 0);
+
+	// Change review while it's at 0 opacity
+	setTimeout(() => {
+		currentIndex = (currentIndex + 1) % reviews.length;
+
+		// Update text content
+		reviewTitle.textContent = reviews[currentIndex].title;
+		reviewText.textContent = reviews[currentIndex].text;
+		reviewAuthor.textContent = reviews[currentIndex].author;
+
+		// Fade in
+		setTimeout(() => {
+			reviewTitle.style.transition = `opacity ${fadeInDuration}ms ease-in`;
+			reviewText.style.transition = `opacity ${fadeInDuration}ms ease-in`;
+			reviewAuthor.style.transition = `opacity ${fadeInDuration}ms ease-in`;
+
+			reviewTitle.style.opacity = 1;
+			reviewText.style.opacity = 1;
+			reviewAuthor.style.opacity = 1;
+		}, 0);
+	}, fadeOutDuration);
+
+	// Repeat the cycle after a duration
+	setTimeout(updateReview, reviewChangeInterval);
+}
+
+// Initial update
+updateReview();

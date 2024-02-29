@@ -530,6 +530,14 @@ header > button {
 
 /*Reviews*/
 
+.static-active {
+    display: block;
+}
+
+#review-container {
+    display: none;
+}
+
 #reviews {
     background: #FAFAFACC;
     padding-bottom: 81px;
@@ -559,6 +567,7 @@ header > button {
     padding: 32px 32px 64px;
     border: 4px solid #232996;
     border-radius: 16px;
+    transition: all 0.2s ease-in-out;
 }
 
 .review-not-active {
@@ -588,6 +597,13 @@ header > button {
     line-height: 36px;
     text-align: left;
     color: #000000;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+#review-container {
+    overflow: hidden;
+    height: 350px;
 }
 
 #reviews > div > div > p {
@@ -911,6 +927,14 @@ img {
         display: none;
     }
 
+    .static-active {
+        display: none;
+    }
+
+    #review-container {
+        display: block;
+    }
+
     .gallery-right {
         margin-right: auto !important;
     }
@@ -930,6 +954,10 @@ img {
     .image-container {
         width: auto;
 
+    }
+
+    .button-1 {
+        scale: 0.8;
     }
 
     .image-container > img {
@@ -962,6 +990,7 @@ img {
         width: 100%;
         margin-inline: 30px;
         padding-bottom: 72px;
+        overflow: hidden;
     }
 
     .review-not-active {
