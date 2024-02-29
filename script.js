@@ -59,7 +59,7 @@ const reviews = [
 let currentIndex = 0;
 const fadeOutDuration = 500;
 const fadeInDuration = 500;
-const stayAtFullOpacityDuration = 2000;
+const stayAtFullOpacityDuration = 5000;
 const reviewChangeInterval = fadeOutDuration + fadeInDuration + stayAtFullOpacityDuration;
 
 // Function to update the displayed review
@@ -104,9 +104,10 @@ function updateReview() {
 
 const galleryContainer = document.getElementById("image");
 const imageSources = [
-	"images/Art-1.webp",
-	"images/Art-2.webp",
-	"images/Art-3.webp",
+	"./images/Art-1.webp",
+	"./images/Art-2.webp",
+	"./images/Art-3.webp",
+	"./images/namaste-relaxation-class.png",
 ];
 let currentImageIndex = 0;
 

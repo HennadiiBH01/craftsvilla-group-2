@@ -611,7 +611,7 @@ header > button {
 
 #review-container {
     overflow: hidden;
-    height: 350px;
+    height: 300px;
 }
 
 #reviews > div > div > p {
@@ -1207,5 +1207,11 @@ img {
     .booking > .container > div > div > p {
         font-size: 18px !important;
         margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #review-author {
+        display: none;
     }
 }
