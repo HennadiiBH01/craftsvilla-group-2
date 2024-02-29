@@ -157,22 +157,26 @@
 					<label for="email">Email Address</label>
 					<input type="text" id="email" placeholder="xyz123@gmail.com">
 				</div>
-				<p>How satisfied are you?</p>
+				<label for="comment">How satisfied are you?</label>
 				<div class="feedback-form-smiles-row">
 					<div>
-						<img src="./images/Worst-b.svg" class="" width="40" height="40" alt="">
+						<img src="./images/Worst-b.svg" data-inactive="./images/Worst-b.svg" data-active="./images/Worst-c.svg" class="smile-img" width="40" height="40" alt="" onclick="toggleActiveSmile(this)">
 					</div>
 					<div>
-						<img src="./images/NotGood-b.svg" class="" width="40" height="40" alt="">
+						<img src="./images/NotGood-b.svg" data-inactive='./images/NotGood-b.svg'
+								data-active='./images/NotGood-c.svg' class="smile-img" width="40" height="40" alt="" onclick="toggleActiveSmile(this)">
 					</div>
 					<div>
-						<img src="./images/Fine-b.svg" class="" width="40" height="40" alt="">
+						<img src="./images/Fine-b.svg" data-inactive='./images/Fine-b.svg'
+								data-active='./images/Fine-c.svg' class="smile-img" width="40" height="40" alt="" onclick="toggleActiveSmile(this)">
 					</div>
 					<div>
-						<img src="./images/LookGood-b.svg" class="" width="40" height="40" alt="">
+						<img src="./images/LookGood-b.svg" data-inactive='./images/LookGood-b.svg'
+								data-active='./images/LookGood-c.svg'  class="smile-img" width="40" height="40" alt="" onclick="toggleActiveSmile(this)">
 					</div>
 					<div>
-						<img src="./images/VeryGood-c.svg" width="40" height="40" alt="">
+						<img src="./images/VeryGood-c.svg" data-inactive='./images/VeryGood-b.svg'
+								data-active='./images/VeryGood-c.svg' class="smile-img" width="40" height="40" alt="" onclick="toggleActiveSmile(this)">
 					</div>
 				</div>
 				<textarea id="comment" name="comment" placeholder="Write your comment..." rows="4"></textarea>

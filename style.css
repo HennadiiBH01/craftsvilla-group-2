@@ -92,6 +92,10 @@ header > button {
     display: none;
 }
 
+.smile-img {
+    cursor: pointer;
+}
+
 #mobile-menu-btn {
     display: none;
     cursor: pointer;

@@ -21,6 +21,21 @@ const toggleMenu = () => {
 	document.getElementsByClassName("header-mobile")[0].classList.toggle('bottom-0')
 }
 
+//
+// Function to toggle active smile
+function toggleActiveSmile(clickedElement) {
+	// Get all smile images
+	const smiles = document.getElementsByClassName('smile-img');
+
+	// Loop through all smiles to deactivate them
+	for (const smile of smiles) {
+		smile.src = smile.dataset.inactive;
+	}
+
+	// Set the clicked smile as active
+	clickedElement.src = clickedElement.dataset.active;
+}
+
 // Reviews
 // let slideIndex = 0;
 //
