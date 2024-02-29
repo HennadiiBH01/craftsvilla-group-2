@@ -214,6 +214,7 @@ header > button {
 
 .product-row {
     margin-inline: auto;
+    width: auto !important;
 }
 
 .booking > .container > div > div > div > h3 {
@@ -653,11 +654,11 @@ header > button {
 }
 
 .feedback-form-col {
-    width: 50%;
+    width: 100%;
 }
 
 .feedback-form-col #email {
-    width: calc(100% - 15px);
+    width: 100%;
 }
 
 label {
@@ -757,6 +758,7 @@ input::placeholder, textarea::placeholder {
 footer {
     background-color: #0F267A;
     color: white;
+    padding-inline: 30px;
     padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
@@ -870,19 +872,30 @@ img {
         padding: 30px 0;
     }
 
+    .booking > .container > div > div {
+        padding: 30px 30px;
+    }
+
     .container > div > div > div {
         margin-inline: auto;
+        width: auto;
     }
 
     .booking > .container > div > div > div {
         margin-inline: auto;
         flex-direction: column;
         gap: 3px;
+        position: relative;
+        scale: 0.8;
     }
 
     .booking > .container > div > div > div > span {
         font-size: 24px;
         margin: 0;
+    }
+
+    .feedback-form-col {
+        margin-bottom: 20px;
     }
 
     .container > div > div {
@@ -917,6 +930,7 @@ img {
 
     .feedback-center {
         margin-inline: 30px;
+
         width: auto;
     }
 
@@ -925,6 +939,8 @@ img {
     }
 
     .feedback-left > p {
+        text-align: center;
+        margin-inline: auto;
         margin-bottom: 50px;
     }
 
@@ -935,5 +951,9 @@ img {
 
     .booking > .container > p {
         margin-inline: 30px;
+    }
+
+    * > p, * > span {
+      font-size: clamp(14px, 5vw, 24px) !important;
     }
 }
