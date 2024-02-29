@@ -34,7 +34,7 @@ a, a:hover {
 header {
     z-index: 10;
     position: fixed;
-    padding: 10px 50px;
+    padding: 10px 30px;
     box-sizing: border-box;
     border-radius: 16px;
     background-color: #FFFFFF;
@@ -48,7 +48,7 @@ header {
 }
 
 header > span {
-    font-size: 43px;
+    font-size: clamp(24px,2.5vw,43px);
     font-weight: 700;
 }
 
@@ -59,7 +59,8 @@ header > nav {
 
 header > nav > a {
     text-decoration: none;
-    font-size: 28px;
+    font-size: clamp(18px,22px,28px);
+    /*font-size: 28px;*/
     font-weight: 600;
     margin-left: 45px;
     margin-right: 45px;
@@ -174,7 +175,8 @@ header > button {
 
 .booking > .container > h2 {
     display: flex;
-    margin-left: auto;
+    padding-inline: 30px;
+    margin-inline: auto;
     max-width: 1280px;
     font-size: 68px;
     font-weight: 400;
@@ -191,9 +193,10 @@ header > button {
 
 .booking > .container > div {
     display: flex;
-    gap: 96px;
+    gap: clamp(5px, 1.1vw, 96px);
     padding-top: 30px;
     padding-bottom: 55px;
+    padding-inline: 30px;
 }
 
 .booking > .container > div > div {
@@ -388,8 +391,9 @@ header > button {
 }
 
 .gallery-left {
-    padding-top: 80px;
-    margin-right: 110px;
+    padding-top: 1px;
+    margin-right: 80px;
+    margin-left: 30px;
 }
 
 .gallery-left > h2 {
@@ -406,8 +410,12 @@ header > button {
     margin-right: 98px;
 }
 
+.gallery-right {
+    margin-right: 30px;
+}
+
 .gallery-right > img {
-    height: 602px;
+    height: auto;
     width: 602px;
 }
 
@@ -445,7 +453,7 @@ header > button {
 .review-active {
     position: relative;
     width: 478px;
-    padding: 32px;
+    padding: 32px 32px 64px;
     border: 4px solid #232996;
     border-radius: 16px;
 }
@@ -507,6 +515,7 @@ header > button {
 
 .feedback-left {
     width: 406px;
+    margin-left: 30px;
 }
 
 .feedback-left > h2 {
@@ -655,6 +664,7 @@ header > button {
 
 .feedback-form-col {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .feedback-form-col #email {
@@ -793,9 +803,14 @@ img {
     -webkit-user-select: none;
 }
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 1279px) {
     header {
         display: none;
+    }
+
+    .image-container {
+        width: auto;
+
     }
 
     .image-container > img {
@@ -813,6 +828,7 @@ img {
     #products > .container > div {
         flex-direction: column;
         gap: 30px;
+        padding-inline: 8px;
     }
 
     #gallery {
@@ -958,6 +974,6 @@ img {
     }
 }
 
-@media screen and (min-width:765px) and (max-width: 1439px) {
+/*@media screen and (min-width:765px) and (max-width: 1439px) {*/
 
-}
+/*}*/
