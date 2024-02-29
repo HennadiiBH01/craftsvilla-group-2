@@ -253,17 +253,24 @@ header > button {
     animation: bounce-4 10s infinite;
 }
 
+.check {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
 .stars-5 {
     position: absolute;
     top: 10px;
-    left: 40px;
+    left: 25px;
     animation: bounce-1 2s infinite;
 }
 
 .stars-6 {
     position: absolute;
-    top: 40px;
-    left: 100px;
+    top: 30px;
+    left: 80px;
     animation: bounce-4 4s infinite;
 }
 
@@ -294,6 +301,13 @@ header > button {
     bottom: 50px;
     left: 125px;
     animation: leg-l 4s linear infinite;
+}
+
+@keyframes ping {
+    75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+    }
 }
 
 @keyframes leg-r {
