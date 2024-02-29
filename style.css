@@ -15,6 +15,14 @@ body {
     overflow-x: hidden;
 }
 
+#image {
+    border-radius: 16px;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
 ::-moz-selection {
     color: white;
     background: #FF2468;
@@ -1162,7 +1170,7 @@ img {
     }
 
     .gallery-left > p {
-        margin-bottom: 100px;
+        margin-bottom: 20px;
         width: 700px;
         margin-inline: auto;
     }
