@@ -115,8 +115,6 @@ header > button {
     font-size: 24px;
 }
 
-
-
 .image-container {
     position: relative;
     margin-bottom: -6px;
@@ -146,7 +144,7 @@ header > button {
     }
 }
 
-@keyframes bounce-1 {
+@keyframes bounce-2 {
     0%, 100% {
         transform: translateY(-25%);
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
@@ -233,6 +231,127 @@ header > button {
     color: #FF2468;
     margin-top: 14px;
     margin-bottom: auto;
+}
+
+.booking-image-container {
+    position: relative;
+    margin-inline: auto;
+    margin-bottom: -6px;
+}
+
+.stars-3 {
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    animation: bounce-3 5s infinite;
+}
+
+.stars-4 {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    animation: bounce-4 10s infinite;
+}
+
+.stars-5 {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    animation: bounce-1 2s infinite;
+}
+
+.stars-6 {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    animation: bounce-4 4s infinite;
+}
+
+.gear-1 {
+    position: absolute;
+    top: 16px;
+    left: 120px;
+    height: 25px;
+    animation: spin-reverse 5s linear infinite;
+}
+
+.gear-2 {
+    position: absolute;
+    top: 30px;
+    left: 145px;
+    animation: spin 10s linear infinite;
+}
+
+.leg-r {
+    position: absolute;
+    bottom: 48px;
+    left: 194px;
+    animation: leg-r 2s linear infinite;
+}
+
+.leg-l {
+    position: absolute;
+    bottom: 50px;
+    left: 125px;
+    animation: leg-l 4s linear infinite;
+}
+
+@keyframes leg-r {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes leg-l {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes bounce-3 {
+    0%, 100% {
+        transform: translateY(-5%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+@keyframes bounce-4 {
+    0%, 100% {
+        transform: translateY(-15%);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+    50% {
+        transform: translateY(+5%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-reverse {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 /*Gallery*/
