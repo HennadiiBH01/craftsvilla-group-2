@@ -41,10 +41,11 @@ header {
     left: 0;
     right: 0;
     max-width: 1440px;
-    margin: 60px auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    box-shadow: 0 0 16px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
 }
 
 header > span {
@@ -974,6 +975,84 @@ img {
     }
 }
 
-/*@media screen and (min-width:765px) and (max-width: 1439px) {*/
+@media screen and (min-width:765px) and (max-width: 1279px) {
+    .container > div > div {
+        width: 35%
+    }
 
-/*}*/
+    h1 {
+        line-height: 60px !important;
+    }
+
+    /*.image-container {*/
+    /*    width: 300px;*/
+    /*    height: auto;*/
+    /*}*/
+
+    .first-screen {
+        width: 90%;
+        margin-inline: auto;
+        flex-direction: row;
+        align-items: end;
+        padding-top: 60px;
+    }
+
+    .first-screen > .container > p {
+        padding-inline: 30px;
+    }
+
+    .last-booking {
+        width: 86% !important;
+    }
+
+    .gallery-right {
+        width: 60%;
+        margin-inline: auto;
+    }
+
+    .gallery-left > p {
+        margin-bottom: 100px;
+        width: 700px;
+        margin-inline: auto;
+    }
+
+    .review-active {
+        width: 600px;
+        margin-top: 40px;
+        margin-inline: auto;
+    }
+
+    .feedback-center {
+        width: 400px;
+        margin-inline: auto;
+    }
+
+    .feedback-left > p {
+        width: 600px;
+        margin-inline: auto;
+    }
+
+    .gallery-left > h2, .booking > .container > h2, .feedback-left > h2, #reviews > h2 {
+        padding-top: 60px;
+        padding-bottom: 15px;
+        line-height: 72px;
+        padding-inline: 100px;
+    }
+
+    #products > .container > div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #products > .container > div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .booking > .container > div > div > p {
+        font-size: 18px !important;
+        margin-bottom: 40px;
+    }
+}
